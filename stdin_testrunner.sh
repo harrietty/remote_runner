@@ -14,11 +14,10 @@ cat > code.sh
 
 # Execute the tests
 
-bats --tap ./tests/${challenge_id}/tests.bats
+bats --tap /tests/${challenge_id}/tests.bats
 
 echo ${?}
 
 # Delete the original code
 
 rm ./code.sh
-
