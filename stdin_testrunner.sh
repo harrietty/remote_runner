@@ -16,7 +16,11 @@ cat > code.sh
 
 bats --tap /tests/${challenge_id}/tests.bats
 
-echo ${?}
+if [[ $? -eq 1 ]]; then
+  exit 1
+else
+  exit 0
+fi
 
 # Delete the original code
 
