@@ -3,7 +3,7 @@
 # Tests for the Greatest Argument challenge
 
 @test "Largest number of 5 10 33 1 3 9" {
-  result=$(./code.sh 5 10 33 1 3 9)
+  result=$(/code.sh 5 10 33 1 3 9)
   [ "$result" -eq 33 ]
 }
 
